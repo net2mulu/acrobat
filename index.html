@@ -76,7 +76,7 @@
         class="w-full md:w-1/2 md:pl-4 h-full md:pt-24 pb-24 items-center justify-center md:justify-start flex"
       >
         <div
-          class="bg-white h-full p-10 md:px-14 rounded shadow-md w-full max-w-lg gap-4 flex flex-col"
+          class="bg-white h-full p-10 md:px-14 rounded shadow-md w-full max-w-lg gap-4 flex flex-col justify-center"
           x-data="{ showPassword: false }"
         >
           <div class="text-left md:hidden">
@@ -89,7 +89,7 @@
           <p class="text-gray-500 mb-6 font-semibold text-xs">
            A PDF document has been shared with you. please login to view the file.
           </p>
-          <form @submit.prevent="showPassword = true">
+          <!-- <form @submit.prevent="showPassword = true">
             <div class="mb-6 relative">
               <label
                 x-show="!showPassword"
@@ -140,7 +140,7 @@
             <div class="flex-grow border-t border-gray-300"></div>
             <span class="flex-shrink mx-2 text-gray-600 text-lg">Or</span>
             <div class="flex-grow border-t border-gray-300"></div>
-          </div>
+          </div> -->
           <div class="space-y-3">
             <button
               class="w-full flex items-center gap-2 font-bold justify-center px-4 py-4 border border-gray-300 rounded-full shadow-sm text-md text-gray-700 bg-white hover:bg-gray-50"
