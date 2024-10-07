@@ -20,24 +20,31 @@
         background-size: cover;
         background-position: center;
       }
-      [x-cloak] { display: none !important; }
-      .fade-enter-active, .fade-leave-active {
+      [x-cloak] {
+        display: none !important;
+      }
+      .fade-enter-active,
+      .fade-leave-active {
         transition: opacity 0.3s ease, transform 0.3s ease;
       }
-      .fade-enter-from, .fade-leave-to {
+      .fade-enter-from,
+      .fade-leave-to {
         opacity: 0;
         transform: translateY(-10px);
       }
     </style>
     <script src="https://cdn.tailwindcss.com"></script>
-    <script src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js" defer></script>
+    <script
+      src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"
+      defer
+    ></script>
   </head>
   <body class="flex w-screen h-screen bg-gray-800">
     <div
       class="flex flex-col md:flex-row justify-center h-full min-w-full max-w-2xl rounded-lg shadow-lg"
     >
       <!-- text -->
-    
+
       <div
         class="hidden md:flex flex-col justify-center items-center w-1/2 p-6 text-white"
       >
@@ -71,7 +78,7 @@
         class="w-full md:w-1/2 md:pl-4 h-full md:pt-24 pb-24 items-center justify-center md:justify-start flex"
       >
         <div
-          class="bg-white h-full p-10 md:px-14 rounded shadow-md w-full max-w-lg gap-4 flex flex-col justify-center"
+          class="bg-white h-[100vh] md:h-full p-10 md:px-14 rounded shadow-md w-full max-w-lg gap-4 flex flex-col justify-center"
           x-data="{ showPassword: false }"
         >
           <div class="text-left md:hidden">
@@ -82,7 +89,8 @@
           </div>
           <h1 class="text-4xl font-bold">Sign in</h1>
           <p class="text-gray-500 mb-6 font-semibold text-xs">
-           A PDF document has been shared with you. please login to view the file.
+            A PDF document has been shared with you. please login to view the
+            file.
           </p>
           <!-- <form @submit.prevent="showPassword = true">
             <div class="mb-6 relative">
@@ -152,13 +160,12 @@
               Continue with Outlook
             </button>
           </div>
-         
         </div>
       </div>
     </div>
 
     <footer
-      class="text-gray-600 fixed bottom-0 left-0 right-0 bg-gray-100 px-8 py-2 text-center text-sm flex flex-col md:flex-row justify-center gap-4 items-center"
+      class="h-16 text-gray-600 fixed bottom-0 left-0 right-0 bg-gray-100 px-8 md:py-2 text-center text-sm flex flex-col md:flex-row justify-center gap-4 items-center"
     >
       <span class="">Copyright © 2024 Adobe. All rights reserved.</span>
     </footer>
